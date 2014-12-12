@@ -215,77 +215,40 @@ header
   p
     margin-top: 40px
 
-.info
-  &__text
-    font-family: 'pf_din_text_cond_prolight'
-    font-size: 18px
-    color: #1e1e1e
-    p
-      margin-top: 2px
-  &__video
-    text-align: center
-  &__video_link
-    display: inline-block
-    max-width: 100%
-    &:hover
-      .info__video_link_in
-        span
-          +opacity(1)
-      .info__video_link_text
-        text-decoration: underline
-  &__video_link_in
-    position: relative
-    max-width: 100%
-    width: 340px
-    height: auto
-    +border-radius(50%)
-    span
-      position: absolute
-      top: 0
-      left: 0
-      right: 0
-      bottom: 0
-      z-index: 1
-      +opacity(0)
-      background: rgba(#000, .5)
-      +tr(all .5s)
-      +border-radius(50%)
-      max-width: 100%
-      &:before
-        position: absolute
-        content: ''
-        background: url(../img/play.png) no-repeat
-        width: 81px
-        height: 81px
-        top: 50%
-        left: 50%
-        +transform(translate(-50%,-50%))
-
-
-  &__video_link_text
-    font-family: 'conv_segoeprintregular'
-    font-size: 16px
-    color: #6ea01e
-    margin-top: 15px
 
 
 .advantages
-  padding: 40px 0 210px
-  background: url(../img/advantages_bg.jpg) no-repeat 40% 140px
-
+  padding: 40px 0 75px
+  background: url(../img/advantages_bg.jpg)
+  +cover
+  overflow: hidden
   h2
-    color: #6ea01e
+    color: #ffffff
+    line-height: 1em
   &__item
     color: #6e461e
     font-size: 24px
-    text-align: center
     font-family: 'pf_din_text_cond_prolight'
     +border-radius(20px)
-    background: #fff5e5
-    padding: 15px 30px
-    margin-top: 35px
+    background: rgba(#fff,.7)
+    padding: 0 24px 20px 15px
+    margin-top: 17px
+    width: 100%
+    display: table
+    &:first-of-type
+      margin-top: 50px
     p
       line-height: 1em
+      display: table-cell
+    span
+      position: relative
+      display: inline-block
+      background: url(../img/advantage-ico.png) no-repeat
+      width: 40px
+      height: 40px
+      top: 24px
+      left: 0
+      margin-right: 20px
 
 .review
 
