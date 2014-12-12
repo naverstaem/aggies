@@ -109,51 +109,98 @@
 
 header
   position: relative
-  background: url(../img/header_bg.jpg) no-repeat 56% 100%
-  background-size: cover
+  background: url(../img/header_bg.jpg)
+  +cover
   overflow: hidden
-  padding: 40px 0
-
-
-
+  padding: 65px 0 45px
+  text-align: center
+  .header__title
+    position: relative
+    z-index: 1
+    display: inline-block
+    span
+      font-family: 'roboto_slabregular'
+      font-size: 60px
+    div
+      color: #ffffff
+      display: inline-block
+      text-align: center
+      font-family: 'pf_din_text_cond_proXTh'
+      font-size: 36px
+      background: #ef3b45
+      padding: 22px 60px
+      &:before
+        position: absolute
+        background: url(../img/header-title-before.png)
+        content: ''
+        width: 140px
+        height: 140px
+        top: 15px
+        left: -100px
+        z-index: -1
+      &:after
+        position: absolute
+        content: ''
+        background: url(../img/header-title-after.png)
+        width: 140px
+        height: 140px
+        top: 15px
+        right: -100px
+        z-index: -1
+      h1
+        line-height: 1em
+        margin: 0 0 10px
   .header__text
-    color: #5a5a5a
+    color: #3c3c3c
     text-align: center
     font-family: 'pf_din_text_cond_prolight'
-    font-size: 24px
-    margin-top: 45px
-  .header__price
-    width: 200px
-    height: 200px
-    background: url(../img/header-price_bg.png) no-repeat
+    font-size: 18px
+    margin: 45px auto 0
+  .header__img
+    position: relative
+    max-width: 100%
+    display: inline-block
     text-align: center
-    padding-top: 65px
+    img
+      max-width: 100%
+      position: relative
+      z-index: 1
+
+  .header__price
+    width: 180px
+    height: 180px
+    text-align: center
+    padding-top: 60px
     display: inline-block
     margin-top: 45px
+    +border-radius(50%)
+    background: rgba(#6d9f1d,.8)
+    position: absolute
+    top: -23px
+    right: -77px
+    z-index: 0
     .price--new
       display: inline-block
-      font-family: 'DINRoundProBlack'
+      font-family: 'roboto_slabbold'
       font-size: 48px
-      line-height: 1em
+      line-height: .8em
       color: #ffffff
       span
-        font-family: 'DINRoundProRegular'
+        font-family: 'als_rublregular'
         font-size: 24px
-        line-height: 1em
     .price--old
       display: inline-block
       font-family: 'pf_din_text_cond_prolight'
-      font-size: 18px
-      color: #507819
-      margin-top: 5px
-
+      font-size: 24px
+      color: #ffffff
+      line-height: 1em
 
 
 
   .header__form
     position: relative
     z-index: 0
-    margin-top: 10px
+    margin: 30px 20px 0
 
 .about
   background: url(../img/about_bg.png)
