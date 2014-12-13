@@ -58,7 +58,10 @@ head.ready(function() {
 	jQuery(function($){
 
 		$(window).on('load', function(){
-			$('#carousel .item').carouselHeights();
+			$('#carousel-review .item').carouselHeights();
+		});
+		$(window).on('load', function(){
+			$('#carousel-recipes .item').carouselHeights();
 		});
 
 	});

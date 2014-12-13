@@ -588,14 +588,60 @@ header
 
 
 
-
-
-
-
-
 .review
-
-
+  background: url(../img/review_bg.png)
+  padding: 50px 0 100px
+  +cover
+  h2
+    color: #ffffff
+  &__item
+    margin-top: 40px
+  &__img
+    img
+      width: 100%
+      max-width: 140px
+      +border-radius(50%)
+  &__text
+    width: 100%
+    +border-radius(24px)
+    +background-clip(padding-box)
+    background: #ffffff
+    padding: 35px 40px 50px
+    font-family: 'pf_din_text_cond_prolight'
+    font-size: 18px
+    color: #3c3c3c
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      top: 50%
+      +transform(translateY(-50%))
+      left: -20px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 20px 20px 20px 0
+      border-color: transparent #ffffff transparent transparent
+    p
+      font-family: 'pf_din_text_cond_prolight'
+      font-size: 24px
+      color: #ff8c1e
+      margin-top: 0
+      margin-bottom: 25px
+  .carousel-control
+    background-image: none
+    width: 40px
+    height: auto
+    &.left
+      background: url(../img/prev2.png) no-repeat
+      width: 40px
+      height: 40px
+      top: 45%
+    &.right
+      background: url(../img/next2.png) no-repeat
+      width: 40px
+      height: 40px
+      top: 45%
 
 
 
