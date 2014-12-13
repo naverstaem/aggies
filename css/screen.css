@@ -1774,6 +1774,14 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .how__item span { text-align: center; vertical-align: middle; display: inline-block; margin-right: 20px; width: 120px; height: 120px; border: 2px solid #f9f5e1; line-height: 116px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 .how__item p { display: table-cell; vertical-align: middle; }
 
+.cook { padding: 50px 0 0; }
+.cook h2 { font-size: 48px; }
+.cook__steps { margin-left: -50px; }
+.cook__steps-item { display: inline-block; width: 140px; height: 140px; vertical-align: top; text-align: center; margin-right: 25px; }
+.cook__steps-item img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.cook__text { font-family: "pf_din_text_cond_prolight"; font-size: 18px; color: #1e1e1e; padding-left: 60px; }
+.cook__text p { margin-top: 25px; }
+
 .works { padding: 40px 0; }
 .works h2 { margin-bottom: 20px; color: #6ea01e; }
 .works__item { margin-top: 20px; text-align: center; }
