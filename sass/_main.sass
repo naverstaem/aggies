@@ -250,6 +250,61 @@ header
       left: 0
       margin-right: 20px
 
+
+
+.how
+  div[class*="col-md-"]
+    text-align: center
+  font-size: 18px
+  color: #3c3c3c
+  font-family: 'pf_din_text_cond_prolight'
+  &__img
+    img
+      +border-radius(50%)
+    margin-top: 30px
+  &__title
+    position: relative
+    z-index: 1
+    display: inline-block
+    top: -50px
+    span
+      font-family: 'roboto_slabregular'
+      font-size: 60px
+    div
+      color: #ffffff
+      display: inline-block
+      text-align: center
+      font-family: 'pf_din_text_cond_prolight'
+      font-size: 24px
+      background: #ef3b45
+      padding: 23px 0
+      min-width: 200px
+      &:before
+        position: absolute
+        background: url(../img/how-item-before.png)
+        content: ''
+        width: 70px
+        height: 70px
+        top: 20px
+        left: -40px
+        z-index: -1
+      &:after
+        position: absolute
+        content: ''
+        background: url(../img/how-item-after.png)
+        width: 70px
+        height: 70px
+        top: 20px
+        right: -40px
+        z-index: -1
+      h3
+        line-height: 1em
+        margin: 0
+
+
+
+
+
 .review
 
 

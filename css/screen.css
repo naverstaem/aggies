@@ -1693,6 +1693,7 @@ input::placeholder, textarea::placeholder { font-size: 18px; text-transform: non
 .btn--blue:active { -webkit-box-shadow: 0 0 0 0; box-shadow: 0 0 0 0; }
 
 .title { color: #f03c46; text-align: center; font-size: 60px; text-transform: none; font-family: "roboto_slabregular"; }
+.title span { font-family: "roboto_slablight"; }
 
 .counter { display: inline-block; vertical-align: middle; margin-top: 0; text-align: center; }
 .counter .bl { display: inline-block; text-align: center; margin: 0 5px; }
@@ -1758,6 +1759,17 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .advantages__item:first-of-type { margin-top: 50px; }
 .advantages__item p { line-height: 1em; display: table-cell; }
 .advantages__item span { position: relative; display: inline-block; background: url(../img/advantage-ico.png) no-repeat; width: 40px; height: 40px; top: 24px; left: 0; margin-right: 20px; }
+
+.how { font-size: 18px; color: #3c3c3c; font-family: "pf_din_text_cond_prolight"; }
+.how div[class*="col-md-"] { text-align: center; }
+.how__img { margin-top: 30px; }
+.how__img img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.how__title { position: relative; z-index: 1; display: inline-block; top: -50px; }
+.how__title span { font-family: "roboto_slabregular"; font-size: 60px; }
+.how__title div { color: #ffffff; display: inline-block; text-align: center; font-family: "pf_din_text_cond_prolight"; font-size: 24px; background: #ef3b45; padding: 23px 0; min-width: 200px; }
+.how__title div:before { position: absolute; background: url(../img/how-item-before.png); content: ""; width: 70px; height: 70px; top: 20px; left: -40px; z-index: -1; }
+.how__title div:after { position: absolute; content: ""; background: url(../img/how-item-after.png); width: 70px; height: 70px; top: 20px; right: -40px; z-index: -1; }
+.how__title div h3 { line-height: 1em; margin: 0; }
 
 .works { padding: 40px 0; }
 .works h2 { margin-bottom: 20px; color: #6ea01e; }
