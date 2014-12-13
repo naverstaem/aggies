@@ -1777,7 +1777,7 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .cook { padding: 50px 0 0; }
 .cook h2 { font-size: 48px; }
 .cook__img { margin-top: 40px; }
-.cook__steps { margin-left: -50px; text-align: center; margin-top: 40px; }
+.cook__steps { margin-left: -50px; text-align: center; margin-top: 50px; }
 .cook__steps-item { display: inline-block; vertical-align: top; text-align: center; margin-right: 30px; position: relative; }
 .cook__steps-item:first-of-type:after { position: absolute; content: ""; background: url(../img/cook-ico.png) no-repeat; width: 60px; height: 20px; top: 0; right: -45px; }
 .cook__steps-item:nth-of-type(2):before { position: absolute; content: ""; background: url(../img/cook-ico.png) no-repeat; -moz-transform: scaleY(-1); -ms-transform: scaleY(-1); -webkit-transform: scaleY(-1); transform: scaleY(-1); width: 60px; height: 20px; bottom: 75px; right: -50px; }
@@ -1786,6 +1786,11 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .cook__steps-item p { font-family: "conv_segoeprintregular"; font-size: 18px; color: #3c3c3c; }
 .cook__text { font-family: "pf_din_text_cond_prolight"; font-size: 18px; color: #1e1e1e; padding-left: 60px; }
 .cook__text p { margin-top: 25px; }
+
+.about2 { background: url(../img/about2_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding: 20px 0; }
+.about2__img { background: url(../img/about2-img.png) no-repeat center center; width: 250px; height: 340px; }
+.about2 p { font-family: "pf_din_text_cond_prolight"; font-size: 18px; color: #1e1e1e; margin-top: 20px; }
+.about2 .button--order { margin-top: 220px; width: 100%; font-size: 30px; padding-top: 15px; height: 80px; font-family: "pf_highway_sans_probold"; }
 
 .works { padding: 40px 0; }
 .works h2 { margin-bottom: 20px; color: #6ea01e; }
