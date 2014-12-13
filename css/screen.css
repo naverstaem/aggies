@@ -1758,10 +1758,10 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .advantages__item { color: #6e461e; font-size: 24px; font-family: "pf_din_text_cond_prolight"; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; background: rgba(255, 255, 255, 0.7); padding: 0 24px 20px 15px; margin-top: 17px; width: 100%; display: table; }
 .advantages__item:first-of-type { margin-top: 50px; }
 .advantages__item p { line-height: 1em; display: table-cell; }
-.advantages__item span { position: relative; display: inline-block; background: url(../img/advantage-ico.png) no-repeat; width: 40px; height: 40px; top: 24px; left: 0; margin-right: 20px; }
+.advantages__item span { position: relative; display: inline-block; vertical-align: middle; background: url(../img/advantage-ico.png) no-repeat; width: 40px; height: 40px; top: 10px; left: 0; margin-right: 20px; }
 
 .how { font-size: 18px; color: #3c3c3c; font-family: "pf_din_text_cond_prolight"; }
-.how div[class*="col-md-"] { text-align: center; }
+.how div[class*="col-md-4"] { text-align: center; }
 .how__img { margin-top: 30px; }
 .how__img img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 .how__title { position: relative; z-index: 1; display: inline-block; top: -50px; }
@@ -1770,6 +1770,9 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .how__title div:before { position: absolute; background: url(../img/how-item-before.png); content: ""; width: 70px; height: 70px; top: 20px; left: -40px; z-index: -1; }
 .how__title div:after { position: absolute; content: ""; background: url(../img/how-item-after.png); width: 70px; height: 70px; top: 20px; right: -40px; z-index: -1; }
 .how__title div h3 { line-height: 1em; margin: 0; }
+.how__item { display: table; margin-top: 40px; }
+.how__item span { text-align: center; vertical-align: middle; display: inline-block; margin-right: 20px; width: 120px; height: 120px; border: 2px solid #f9f5e1; line-height: 116px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.how__item p { display: table-cell; vertical-align: middle; }
 
 .works { padding: 40px 0; }
 .works h2 { margin-bottom: 20px; color: #6ea01e; }
