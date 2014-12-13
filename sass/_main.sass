@@ -324,17 +324,47 @@ header
   padding: 50px 0 0
   h2
     font-size: 48px
+  &__img
+    margin-top: 40px
   &__steps
     margin-left: -50px
+    text-align: center
+    margin-top: 40px
   &__steps-item
     display: inline-block
-    width: 140px
-    height: 140px
     vertical-align: top
     text-align: center
-    margin-right: 25px
+    margin-right: 30px
+    position: relative
+    &:first-of-type
+      &:after
+        position: absolute
+        content: ''
+        background: url(../img/cook-ico.png) no-repeat
+        width: 60px
+        height: 20px
+        top: 0
+        right: -45px
+    &:nth-of-type(2)
+      &:before
+        position: absolute
+        content: ''
+        background: url(../img/cook-ico.png) no-repeat
+        +transform(scaleY(-1))
+        width: 60px
+        height: 20px
+        bottom: 75px
+        right: -50px
+    &:last-of-type
+      margin-right: 0
     img
       +border-radius(50%)
+      margin-bottom: 10px
+
+    p
+      font-family: 'conv_segoeprintregular'
+      font-size: 18px
+      color: #3c3c3c
 
 
   &__text
