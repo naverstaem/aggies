@@ -474,11 +474,32 @@ header
 
 .characteristics
   font-family: 'pf_din_text_cond_prolight'
+  padding: 70px 0 30px
   h2
     font-size: 48px
     color: #6ea01e
   &__img
     margin-top: 55px
+    position: relative
+    .amount
+      position: absolute
+      content: ''
+      display: inline-block
+      width: 140px
+      height: 140px
+      color: #ffffff
+      background: rgba(#6d9f1d, .8)
+      +border-radius(50%)
+      padding-top: 50px
+      line-height: .5em
+      text-align: center
+      font-size: 36px
+      font-family: 'roboto_slabbold'
+      top: 50px
+      right: 35px
+      span
+        font-family: 'pf_din_text_cond_proLtIt'
+        font-size: 18px
   &__material
     font-size: 24px
     color: #6ea01e
@@ -538,23 +559,14 @@ header
       top: 5px
 
 
-
-
-
-
-
-
-.review
-
-
-
 .works
-  padding: 40px 0
+  padding: 20px 0 70px
   h2
     margin-bottom: 20px
+    font-size: 48px
     color: #6ea01e
   &__item
-    margin-top: 20px
+    margin-top: 25px
     text-align: center
     p
       font-family: 'pf_din_text_cond_prolight'
@@ -570,9 +582,19 @@ header
     width: 140px
     height: 140px
     +border-radius(24px)
-    border: solid 2px #dbdbdb
+    border: solid 2px #e5f9c7
     img
       vertical-align: middle
+
+
+
+
+
+
+
+
+.review
+
 
 
 
