@@ -644,10 +644,6 @@ header
       top: 45%
 
 
-
-
-
-
 .header--bottom
   @extend header
 
@@ -752,6 +748,7 @@ header
         +background(linear-gradient(to bottom, #ffc73b 0%, #db6d00 100%))
         +box-shadow(inset 0 -4px 0 rgba(165, 27, 4, 0.2))
         +single-text-shadow()
+        +border-radius(4px)
         &:hover, &:focus
           background: #ffc73b
           color: #ffffff
@@ -788,18 +785,20 @@ header
 
 footer
   background: url(../img/footer_bg.png) repeat
-  padding: 15px
+  padding: 12px
   font-family: 'pf_din_text_cond_prolight'
   text-align: center
   p
     font-size: 16px
     margin-bottom: 5px
-    color: #787878
+    color: #ffffff
+    &:last-child
+      margin-bottom: 0
   a
-    color: #23bed2
+    color: #fadc96
     text-decoration: underline
     &:hover, &:active, &:focus
-      color: #23bed2
+      color: #fadc96
       text-decoration: none
 
 
