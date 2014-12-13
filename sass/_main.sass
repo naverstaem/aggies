@@ -398,8 +398,78 @@ header
     height: 80px
     font-family: 'pf_highway_sans_probold'
 
-
-
+.recipes
+  padding: 50px 0 80px
+  background: url(../img/recipes_bg.jpg)
+  +cover
+  h2
+    font-family: 'roboto_slabbold'
+    font-size: 72px
+    color: #ffffff
+  &__item
+    margin: 40px -35px 0
+    +border-radius(12px)
+    max-width: 540px
+  &__img
+    +border-radius(12px 12px 0 0)
+    img
+      +border-radius(12px 12px 0 0)
+      width: 100%
+  &__text
+    background: url(../img/recipes-item-text_bg.png) repeat
+    position: relative
+    padding: 30px 35px
+    +border-radius(0 0 12px 12px)
+    &:before
+      position: absolute
+      content: ''
+      top: 0
+      width: 100%
+      background: url(../img/recipe-shadow.png) no-repeat
+      height: 20px
+      left: 50%
+      +transform(translateX(-50%))
+    h3
+      margin: 0
+      font-family: 'pf_din_text_cond_prothin'
+      font-size: 36px
+      color: #6ea01e
+      text-align: center
+    h4
+      font-family: 'conv_segoeprintregular'
+      font-size: 18px
+      color: #6ea01e
+      text-align: center
+      margin-top: 10px
+  &__recipe
+    font-family: 'pf_din_text_cond_prolight'
+    font-size: 18px
+    color: #64460a
+    p
+      margin-top: 7px
+  &__details
+    font-family: 'pf_din_text_cond_prolight'
+    font-size: 16px
+    color: #1e1e1e
+    margin-top: 20px
+    p
+      margin-top: 15px
+  .carousel-control
+    background-image: none
+    width: 50px
+    height: auto
+    &.left
+      background: url(../img/prev.png) no-repeat
+      width: 80px
+      height: 80px
+      top: 45%
+      left: 5%
+    &.right
+      background: url(../img/next.png) no-repeat
+      width: 80px
+      height: 80px
+      top: 45%
+      right: 5%
 .review
 
 
