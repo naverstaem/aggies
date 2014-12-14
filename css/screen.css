@@ -1680,6 +1680,8 @@ input::placeholder, textarea::placeholder { font-size: 18px; text-transform: non
 
 .container, .container-fluid { max-width: 1000px; }
 
+.parallax { position: absolute; }
+
 .btn { text-transform: none; color: #966e1e; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background-color: #8bc727; -webkit-box-shadow: inset 0 -4px 0 rgba(200, 146, 35, 0.44); box-shadow: inset 0 -4px 0 rgba(200, 146, 35, 0.44); background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZjViZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZGIwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff5bd), color-stop(100%, #ffdb00)); background-image: -moz-linear-gradient(top, #fff5bd 0%, #ffdb00 100%); background-image: -webkit-linear-gradient(top, #fff5bd 0%, #ffdb00 100%); background-image: linear-gradient(to bottom, #fff5bd 0%, #ffdb00 100%); font-family: "roboto_slabregular"; font-size: 30px; }
 .btn:hover, .btn:focus { background: #ffe233; color: #966e1e; }
 .btn:active { -webkit-box-shadow: 0 0 0 0; box-shadow: 0 0 0 0; }
@@ -1750,14 +1752,18 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .about p { margin-top: 40px; }
 
 .advantages { padding: 40px 0 75px; background: url(../img/advantages_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; overflow: hidden; }
+.advantages .container { position: relative; }
 .advantages h2 { color: #ffffff; line-height: 1em; }
 .advantages__item { color: #6e461e; font-size: 24px; font-family: "pf_din_text_cond_prolight"; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; background: rgba(255, 255, 255, 0.7); padding: 0 24px 20px 15px; margin-top: 17px; width: 100%; display: table; }
 .advantages__item:first-of-type { margin-top: 50px; }
 .advantages__item p { line-height: 1em; display: table-cell; }
 .advantages__item span { position: relative; display: inline-block; vertical-align: middle; background: url(../img/advantage-ico.png) no-repeat; width: 40px; height: 40px; top: 10px; left: 0; margin-right: 20px; }
+.advantages .parallax1 { top: 375px; left: -375px; }
+.advantages .parallax2 { top: 400px; right: -370px; }
 
-.how { font-size: 18px; color: #3c3c3c; font-family: "pf_din_text_cond_prolight"; }
+.how { font-size: 18px; color: #3c3c3c; font-family: "pf_din_text_cond_prolight"; overflow: hidden; }
 .how div[class*="col-md-4"] { text-align: center; }
+.how .container { position: relative; }
 .how__img { margin-top: 30px; }
 .how__img img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 .how__title { position: relative; z-index: 1; display: inline-block; top: -50px; }
@@ -1769,6 +1775,8 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .how__item { display: table; margin-top: 40px; }
 .how__item span { text-align: center; vertical-align: middle; display: inline-block; margin-right: 20px; width: 120px; height: 120px; border: 2px solid #f9f5e1; line-height: 116px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 .how__item p { display: table-cell; vertical-align: middle; }
+.how .parallax4 { top: 700px; right: -370px; }
+.how .parallax3 { top: 660px; left: -340px; }
 
 .cook { padding: 50px 0 0; }
 .cook h2 { font-size: 48px; }
@@ -1784,9 +1792,11 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .cook__text p { margin-top: 25px; }
 
 .about2 { background: url(../img/about2_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding: 20px 0; }
+.about2 .container { position: relative; }
 .about2__img { background: url(../img/about2-img.png) no-repeat center center; width: 250px; height: 340px; }
 .about2 p { font-family: "pf_din_text_cond_prolight"; font-size: 18px; color: #1e1e1e; margin-top: 20px; }
 .about2 .button--order { margin-top: 220px; width: 100%; font-size: 30px; padding-top: 15px; height: 80px; font-family: "pf_highway_sans_probold"; }
+.about2 .parallax5 { top: 340px; left: -340px; }
 
 .recipes { padding: 50px 0 80px; background: url(../img/recipes_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .recipes h2 { font-family: "roboto_slabbold"; font-size: 72px; color: #ffffff; }
@@ -1876,6 +1886,10 @@ footer p:last-child { margin-bottom: 0; }
 footer a { color: #fadc96; text-decoration: underline; }
 footer a:hover, footer a:active, footer a:focus { color: #fadc96; text-decoration: none; }
 
+@media (max-width: 992px) { .recipes__item { margin: 40px auto 0; } }
 @media (max-width: 768px) { h1, h2 { font-size: 32px !important; }
-  .cook__img img { max-width: 100%; }
-  .characteristics__img img { max-width: 100%; } }
+  h1 span, h2 span { font-size: 32px !important; }
+  .cook__img img, .about__img img, .characteristics__img img { max-width: 100%; }
+  .about__img { margin-left: 0; } }
+@media (max-width: 480px) { .characteristics__bottom .button--characteristics { margin-left: 0; }
+  header .header__price, .header--bottom .header__price { right: 0; z-index: 1; } }

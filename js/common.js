@@ -65,6 +65,15 @@ head.ready(function() {
 		});
 
 	});
+    //stellar parallax effect=================================
+    $(window).stellar({
+		horizontalScrolling: false
+		,
+		verticalOffset: 40
+
+    });
+	//========================================================
+
 
 	// Counter
 
